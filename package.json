@@ -12,7 +12,11 @@
   "dependencies": {
     "@astrojs/check": "^0.5.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/nunito-sans": "^5.0.9",
     "astro": "^4.3.5",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }

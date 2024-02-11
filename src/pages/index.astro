@@ -1,12 +1,13 @@
 ---
-import BtnTheme from '../components/BtnTheme'
+import AboutMe from '../components/AboutMe.astro'
+// import BtnTheme from '../components/BtnTheme'
 import Layout from '../layouts/Layout.astro'
 import '@fontsource-variable/nunito-sans'
 ---
 
-<Layout title='home'>
+<Layout title='Home'>
     <main>
-        <h1 class='text-black dark:text-white'>Minimal Portfolio Web</h1>
-        <BtnTheme client:only='preact' />
+        <AboutMe />
+        <!-- <BtnTheme client:only /> -->
     </main>
 </Layout>

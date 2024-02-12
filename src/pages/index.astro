@@ -1,13 +1,17 @@
 ---
-import AboutMe from '../components/AboutMe.astro'
+import AboutMe from '../components/portfolio/AboutMe.astro'
+import Education from '../components/portfolio/Education.astro'
+import WorkExperience from '../components/portfolio/WorkExperience.astro'
 // import BtnTheme from '../components/BtnTheme'
 import Layout from '../layouts/Layout.astro'
 import '@fontsource-variable/nunito-sans'
 ---
 
 <Layout title='Home'>
-    <main>
+    <main class='py-12'>
         <AboutMe />
+        <WorkExperience />
+        <Education />
         <!-- <BtnTheme client:only /> -->
     </main>
 </Layout>

@@ -1,0 +1,13 @@
+---
+interface Props {
+    place: string
+    certificate: string
+}
+
+const { place, certificate } = Astro.props
+---
+
+<div class='mb-2 text-black dark:text-white'>
+    <h3 class='font-semibold'>{place}</h3>
+    <p>{certificate}</p>
+</div>

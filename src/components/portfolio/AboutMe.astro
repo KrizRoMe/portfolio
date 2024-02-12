@@ -1,14 +1,15 @@
 ---
-import Github from '../icons/Github.astro'
-import Linkedin from '../icons/Linkedin.astro'
-import Mail from '../icons/Mail.astro'
-import Phone from '../icons/Phone.astro'
+import Github from '../../icons/Github.astro'
+import Linkedin from '../../icons/Linkedin.astro'
+import Mail from '../../icons/Mail.astro'
+import Phone from '../../icons/Phone.astro'
 ---
 
-<section class='space-y-3 py-10'>
+<section class='space-y-3 pb-5'>
     <div class='flex flex-wrap items-center justify-between gap-2'>
         <section>
-            <h1 class='font-bold text-black dark:text-white'>
+            <h1
+                class='text-xl font-bold text-black dark:text-white md:text-2xl'>
                 CRISTOPHER ROMERO
             </h1>
             <span
@@ -42,11 +43,16 @@ import Phone from '../icons/Phone.astro'
             </ul>
         </section>
     </div>
-    <article class='text-pretty text-black dark:text-white'>
+    <article class='space-y-1 text-pretty pb-2 text-black dark:text-white'>
         <p>
-            Desarrollador de software full-stack con más de 2 años de
-            experiencia trabajando en proyectos independientes y en la industria
-            de la salud, utilizando JavaScript (React) y Python (Django)
+            Ingeniero de Software Fullstack con <span
+                class='font-semibold text-green-600'
+                >más de 2 años de experiencia</span
+            >
+            trabajando en proyectos independientes y en la industria de la salud,
+            utilizando <span class='fonts-semibold text-yellow-600'
+                >JavaScript (React) y Python (Django)</span
+            >.
         </p>
         <p>
             Disfruto enfrentando desafíos técnicos y encontrando soluciones
@@ -57,4 +63,5 @@ import Phone from '../icons/Phone.astro'
             significativos y entregado soluciones sólidas y eficientes.
         </p>
     </article>
+    <hr class='border-b border-black' />
 </section>

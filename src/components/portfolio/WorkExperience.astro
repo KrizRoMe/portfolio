@@ -1,33 +1,78 @@
 ---
-import ExperienceSection from '../ExperienceSection.astro'
+import ExperienceItem from '../ExperienceItem.astro'
+import { getI18N } from '../../i18n'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
-<section class='space-y-3 pb-5'>
-    <h2 class='text-xl font-bold text-black dark:text-white md:text-2xl'>
-        EXPERIENCIA LABORAL
+<section class='py-2'>
+    <h2 class='mb-1.5 text-xl font-bold text-black dark:text-white'>
+        {i18n.VL_EXPERIENCE_TITLE}
     </h2>
     <ol
-        class='border-l border-black text-black dark:border-white dark:text-white'>
-        <ExperienceSection
-            date='Datakraft, Octubre 2023 - Presente'
-            title='DESARROLLADOR DE SOFTWARE FULLSTACK'
-            description='Diseñé la interfaz de validación de datos con un enfoque en la facilidad de uso para el usuario (Jquery, Bootstrap).Desarrollé procedimientos de validación de datos para garantizar precisión e integridad (Django, SQLServer).Optimicé los datos mostrados en una tabla, reduciendo la carga en un 45% (React, Typescript, Tailwind CSS).Desarrollé una integración de mensajería utilizando la API de Whatsapp Business con un ERP dental (Django Rest).'
-        />
-        <ExperienceSection
-            date='Datakraft, Octubre 2023 - Presente'
-            title='DESARROLLADOR DE SOFTWARE FULLSTACK'
-            description='Diseñé la interfaz de validación de datos con un enfoque en la facilidad de uso para el usuario (Jquery, Bootstrap).Desarrollé procedimientos de validación de datos para garantizar precisión e integridad (Django, SQLServer).Optimicé los datos mostrados en una tabla, reduciendo la carga en un 45% (React, Typescript, Tailwind CSS).Desarrollé una integración de mensajería utilizando la API de Whatsapp Business con un ERP dental (Django Rest).'
-        />
-        <ExperienceSection
-            date='Datakraft, Octubre 2023 - Presente'
-            title='DESARROLLADOR DE SOFTWARE FULLSTACK'
-            description='Diseñé la interfaz de validación de datos con un enfoque en la facilidad de uso para el usuario (Jquery, Bootstrap).Desarrollé procedimientos de validación de datos para garantizar precisión e integridad (Django, SQLServer).Optimicé los datos mostrados en una tabla, reduciendo la carga en un 45% (React, Typescript, Tailwind CSS).Desarrollé una integración de mensajería utilizando la API de Whatsapp Business con un ERP dental (Django Rest).'
-        />
-        <ExperienceSection
-            date='Datakraft, Octubre 2023 - Presente'
-            title='DESARROLLADOR DE SOFTWARE FULLSTACK'
-            description='Diseñé la interfaz de validación de datos con un enfoque en la facilidad de uso para el usuario (Jquery, Bootstrap).Desarrollé procedimientos de validación de datos para garantizar precisión e integridad (Django, SQLServer).Optimicé los datos mostrados en una tabla, reduciendo la carga en un 45% (React, Typescript, Tailwind CSS).Desarrollé una integración de mensajería utilizando la API de Whatsapp Business con un ERP dental (Django Rest).'
-        />
+        class='space-y-1.5 border-l border-black leading-normal text-black dark:border-white dark:text-white'>
+        <ExperienceItem
+            date={i18n.VL_EXPERIENCE_ITEM_DATE_1}
+            title={i18n.VL_EXPERIENCE_ITEM_TITLE_1}>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+        </ExperienceItem>
+        <ExperienceItem
+            date={i18n.VL_EXPERIENCE_ITEM_DATE_1}
+            title={i18n.VL_EXPERIENCE_ITEM_TITLE_1}>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+        </ExperienceItem>
+        <ExperienceItem
+            date={i18n.VL_EXPERIENCE_ITEM_DATE_1}
+            title={i18n.VL_EXPERIENCE_ITEM_TITLE_1}>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+        </ExperienceItem>
+        <ExperienceItem
+            date={i18n.VL_EXPERIENCE_ITEM_DATE_1}
+            title={i18n.VL_EXPERIENCE_ITEM_TITLE_1}>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+            <li>
+                {i18n.VL_EXPERIENCE_ITEM_DESCRIPTION_1}
+            </li>
+        </ExperienceItem>
     </ol>
-    <hr class='border-b border-black' />
 </section>
+<hr class='border-b border-indigo-500' />

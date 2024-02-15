@@ -3,65 +3,65 @@ import Github from '../../icons/Github.astro'
 import Linkedin from '../../icons/Linkedin.astro'
 import Mail from '../../icons/Mail.astro'
 import Phone from '../../icons/Phone.astro'
+import { getI18N } from '../../i18n'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
-<section class='space-y-3 pb-5'>
-    <div class='flex flex-wrap items-center justify-between gap-2'>
-        <section>
-            <h1
-                class='text-xl font-bold text-black dark:text-white md:text-2xl'>
-                CRISTOPHER ROMERO
+<section class='py-2'>
+    <div class='mb-1.5 flex flex-wrap items-center justify-between gap-1.5'>
+        <section class='leading-4'>
+            <h1 class='text-xl font-bold text-black dark:text-white'>
+                {i18n.VL_ABOUT_ME_TITLE}
             </h1>
             <span
-                class='inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10'
-                >INGENIERO DE SOFTWARE FULLSTACK
+                class='font-sm inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs text-indigo-700 ring-1 ring-inset ring-indigo-700/10'
+                >{i18n.VL_ABOUT_ME_BADGE}
             </span>
         </section>
         <section>
             <ul
-                class='grid grid-flow-col grid-rows-1 gap-x-2 gap-y-1 text-black dark:text-white sm:grid-rows-2'>
+                class='grid grid-flow-col grid-rows-1 gap-x-2 gap-y-1 text-indigo-500 sm:grid-rows-2'>
                 <li>
-                    <a href='#'>
+                    <a
+                        href='https://github.com/KrizRoMe'
+                        target='_blank'
+                        aria-label='Read more about Github'>
                         <Github />
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a
+                        href='https://www.linkedin.com/in/cristopher-moises-romero-medrano-a28583298/'
+                        target='_blank'
+                        aria-label='Read more about Linkedin'>
                         <Linkedin />
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a
+                        href='mailto:cmromero1231@gmail.com'
+                        target='_blank'
+                        aria-label='Send a message'>
                         <Mail />
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a
+                        href='tel:+51986550234'
+                        target='_blank'
+                        aria-label='Call by cellphone'>
                         <Phone />
                     </a>
                 </li>
             </ul>
         </section>
     </div>
-    <article class='space-y-1 text-pretty pb-2 text-black dark:text-white'>
-        <p>
-            Ingeniero de Software Fullstack con <span
-                class='font-semibold text-green-600'
-                >más de 2 años de experiencia</span
-            >
-            trabajando en proyectos independientes y en la industria de la salud,
-            utilizando <span class='fonts-semibold text-yellow-600'
-                >JavaScript (React) y Python (Django)</span
-            >.
-        </p>
-        <p>
-            Disfruto enfrentando desafíos técnicos y encontrando soluciones
-            creativas a problemas complejos.
-        </p>
-        <p>
-            Mi historial incluye proyectos en los que he superado obstáculos
-            significativos y entregado soluciones sólidas y eficientes.
-        </p>
+    <article class='text-pretty text-black dark:text-white'>
+        <p set:html={i18n.VL_ABOUT_ME_DESCRIPTION_1} />
+        <p set:html={i18n.VL_ABOUT_ME_DESCRIPTION_2} />
+        <p set:html={i18n.VL_ABOUT_ME_DESCRIPTION_3} />
     </article>
-    <hr class='border-b border-black' />
 </section>
+<hr class='border-b border-indigo-500' />

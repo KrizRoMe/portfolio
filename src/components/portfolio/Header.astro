@@ -1,0 +1,9 @@
+---
+import BtnTheme from '../preact/BtnTheme'
+import BtnLanguage from '../preact/BtnLanguage'
+---
+
+<header class='flex items-center justify-between'>
+    <BtnLanguage client:only='preact' />
+    <BtnTheme client:only='preact' />
+</header>

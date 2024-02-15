@@ -1,28 +1,39 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
 interface Props {
     title: string
+    description: string
 }
 
-const { title } = Astro.props
+const { title, description } = Astro.props
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='es'>
     <head>
         <meta charset='UTF-8' />
-        <meta name='description' content='Astro description' />
+        <meta name='description' content={description} />
         <meta name='viewport' content='width=device-width' />
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
         <meta name='generator' content={Astro.generator} />
-        <title>Portfolio | {title}</title>
+        <title>{title}</title>
+        <ViewTransitions />
     </head>
     <body
-        class='m-auto min-h-screen max-w-[1000px] bg-white px-5 dark:bg-slate-800 sm:px-10 md:text-lg'>
+        class='m-auto min-h-screen max-w-[1000px] bg-white px-5 dark:bg-gradient-to-tr dark:from-[#121212] dark:to-[#080808] sm:px-10'>
         <slot />
+        <style is:global>
+            :root {
+                color-scheme: light dark;
+            }
+            @media print {
+                @page {
+                    margin: 0;
+                }
+                header {
+                    display: none !important;
+                }
+            }
+        </style>
     </body>
 </html>
-<style is:global>
-    :root {
-        color-scheme: light dark;
-    }
-</style>

@@ -1,0 +1,24 @@
+---
+interface Props {
+    date: string
+    title: string
+}
+
+const { date, title }: Props = Astro.props
+---
+
+<li>
+    <div class='flex-start flex items-center'>
+        <div class='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-indigo-500'>
+        </div>
+        <p class='text-sm'>{date}</p>
+    </div>
+    <div class='ml-4'>
+        <h3 class='font-semibold'>{title}</h3>
+        <p class='text-pretty'>
+            <ul class='list-disc text-pretty pl-5'>
+                <slot />
+            </ul>
+        </p>
+    </div>
+</li>

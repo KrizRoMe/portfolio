@@ -1,0 +1,20 @@
+{
+    "VL_SEO_TITLE": "Portafolio | Cristopher Romero",
+    "VL_SEO_DESCRIPTION": "Una aplicación web enfocada a mostrar mi experiencia personal trabajando como ingeniero de software.",
+    "VL_ABOUT_ME_TITLE": "CRISTOPHER ROMERO",
+    "VL_ABOUT_ME_BADGE": "INGENIERO DE SOFTWARE FULLSTACK",
+    "VL_ABOUT_ME_DESCRIPTION_1": "Ingeniero de Software Fullstack con <strong class='font-semibold'>más de 2 años de experiencia</strong>trabajando en proyectos independientes y en la industria de la salud,utilizando <strong class='font-semibold'>JavaScript (React) y Python (Django).</strong>",
+    "VL_ABOUT_ME_DESCRIPTION_2": "Disfruto enfrentando desafíos técnicos y encontrando soluciones creativas a problemas complejos.",
+    "VL_ABOUT_ME_DESCRIPTION_3": "Mi historial incluye proyectos en los que he superado obstáculos significativos y entregado soluciones sólidas y eficientes.",
+    "VL_EXPERIENCE_TITLE": "EXPERIENCIA LABORAL",
+    "VL_EXPERIENCE_ITEM_DATE_1": "Datakraft, Octubre 2023 - Presente",
+    "VL_EXPERIENCE_ITEM_TITLE_1": "DESARROLLADOR DE SOFTWARE FULLSTACK",
+    "VL_EXPERIENCE_ITEM_DESCRIPTION_1": "Diseñé la interfaz de validación de datos con un enfoque en la facilidad de uso para el usuario.",
+    "VL_EDUCATION_TITLE": "EDUCACIÓN",
+    "VL_EDUCATION_ITEM_PLACE_1": "Unheval, 2019",
+    "VL_EDUCATION_ITEM_CETIFICATE_1": "Grado de Ingenieria de Software",
+    "VL_EDUCATION_ITEM_PLACE_2": "Icpna, 2023",
+    "VL_EDUCATION_ITEM_CETIFICATE_2": "Certificado de Inglés",
+    "VL_EDUCATION_ITEM_PLACE_3": "Microsoft, 2023",
+    "VL_EDUCATION_ITEM_CETIFICATE_3": "Certificado Desarrollador de GitHub"
+}

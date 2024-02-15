@@ -1,0 +1,21 @@
+---
+import AboutMe from './portfolio/AboutMe.astro'
+import Education from './portfolio/Education.astro'
+import WorkExperience from './portfolio/WorkExperience.astro'
+import Header from './portfolio/Header.astro'
+import Layout from '../layouts/Layout.astro'
+import '@fontsource-variable/nunito-sans'
+import { getI18N } from '../i18n'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Layout title={i18n.VL_SEO_TITLE} description={i18n.VL_SEO_DESCRIPTION}>
+    <main class='py-12'>
+        <Header />
+        <AboutMe />
+        <WorkExperience />
+        <Education />
+    </main>
+</Layout>

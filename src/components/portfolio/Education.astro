@@ -1,18 +1,25 @@
 ---
-import EducationSection from '../EducationSection.astro'
+import EducationItem from '../EducationItem.astro'
+import { getI18N } from '../../i18n'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
-<section class='space-y-3 pb-5'>
-    <h2 class='text-xl font-bold text-black dark:text-white md:text-2xl'>
-        EDUCACIÓN
+<section class='py-2'>
+    <h2 class='mb-1 space-y-1.5 text-xl font-bold text-black dark:text-white'>
+        {i18n.VL_EDUCATION_TITLE}
     </h2>
-    <EducationSection
-        place='Unheval, 2019'
-        certificate='Grado de Ingeniería de Sistemas'
+    <EducationItem
+        place={i18n.VL_EDUCATION_ITEM_PLACE_1}
+        certificate={i18n.VL_EDUCATION_ITEM_CETIFICATE_1}
     />
-    <EducationSection place='Icpna, 2023' certificate='Certificado de Inglés' />
-    <EducationSection
-        place='Microsoft, 2023'
-        certificate='Certificado Desarrollador Github'
+    <EducationItem
+        place={i18n.VL_EDUCATION_ITEM_PLACE_2}
+        certificate={i18n.VL_EDUCATION_ITEM_CETIFICATE_2}
+    />
+    <EducationItem
+        place={i18n.VL_EDUCATION_ITEM_PLACE_3}
+        certificate={i18n.VL_EDUCATION_ITEM_CETIFICATE_3}
     />
 </section>

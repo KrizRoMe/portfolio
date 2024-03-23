@@ -15,8 +15,8 @@ function BtnLanguage() {
             onClick={() => _handleChangeLanguage(VL_ES_LANGUAGE)}
             href="/"
             class={`inline-flex cursor-pointer items-center justify-center rounded-md py-1 px-3 text-sm font-medium
-              border-2 border-indigo-300 text-gray-900 dark:text-white hover:text-white hover:bg-indigo-600 dark:hover:text-white
-              ${current_language === VL_ES_LANGUAGE && "bg-indigo-600  text-white"}`
+              border-2 border-slate-100 text-gray-900 dark:text-white hover:text-black hover:bg-slate-100 dark:hover:text-black
+              ${current_language === VL_ES_LANGUAGE && "bg-slate-100 dark:text-black"}`
             }
             >
             ES
@@ -25,8 +25,8 @@ function BtnLanguage() {
             onClick={() => _handleChangeLanguage(VL_EN_LANGUAGE)}
             href="/en/"
             class={`inline-flex cursor-pointer items-center justify-center rounded-md py-1 px-3 text-sm font-medium
-              border-2 border-indigo-300 text-gray-900 dark:text-white hover:text-white hover:bg-indigo-600 dark:hover:text-white
-              ${current_language === VL_EN_LANGUAGE && "bg-indigo-600 text-white"}`
+              border-2 border-slate-100 text-gray-900 dark:text-white hover:text-black hover:bg-slate-100 dark:hover:text-black
+              ${current_language === VL_EN_LANGUAGE && "bg-slate-100 dark:text-black"}`
             }
             >
             EN

@@ -16,13 +16,13 @@ const i18n = getI18N({ currentLocale })
                 {i18n.VL_ABOUT_ME_TITLE}
             </h1>
             <span
-                class='font-sm inline-flex items-center rounded-md bg-slate-100 px-2 py-1 text-xs text-black ring-1 ring-inset ring-black'
+                class='font-sm inline-flex items-center rounded-md bg-black px-2 py-1 text-xs text-white dark:bg-white dark:text-black'
                 >{i18n.VL_ABOUT_ME_BADGE}
             </span>
         </section>
         <section>
             <ul
-                class='grid grid-flow-col grid-rows-1 gap-x-2 gap-y-1 text-black dark:text-slate-200 sm:grid-rows-2'>
+                class='grid grid-flow-col grid-rows-1 gap-x-2 gap-y-1 text-black dark:text-white sm:grid-rows-2'>
                 <li>
                     <a
                         href='https://github.com/KrizRoMe'
@@ -64,4 +64,5 @@ const i18n = getI18N({ currentLocale })
         <p set:html={i18n.VL_ABOUT_ME_DESCRIPTION_3} />
     </article>
 </section>
-<hr class='border-b border-black' />
+<hr class='border-b border-black dark:border-white' />
+

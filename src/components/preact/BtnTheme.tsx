@@ -23,13 +23,13 @@ function BtnTheme() {
     aria-label="Button Change theme"
     id="btn-theme"
     onClick={_handleChangeTheme}
-    className={`pt-1 px-2 rounded-md bg-slate-100 dark:bg-[#151515]
-      ${theme === VL_LIGHT_THEME ? 'text-[#151515]' : 'text-white'}
+    className={`pt-1 px-2 rounded-md bg-black dark:bg-white
+      ${theme === VL_LIGHT_THEME ? 'text-black' : 'text-white'}
       transition-colors duration-300`}
   >
-    <span className="relative inline-block w-8 h-4 bg-white rounded-full shadow-md">
+    <span className="relative inline-block w-8 h-4 bg-white dark:bg-black rounded-full shadow-md">
       <span
-        className={`absolute inset-y-0 left-0 w-4 h-4 bg-white dark:bg-[#151515] rounded-full shadow-md
+        className={`absolute inset-y-0 left-0 w-4 h-4 bg-black dark:bg-white rounded-full shadow-md
           ${theme === VL_LIGHT_THEME ? 'transform translate-x-0' : 'transform translate-x-4'}
           transition-transform duration-300`}
       />

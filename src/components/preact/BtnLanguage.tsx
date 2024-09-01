@@ -1,4 +1,3 @@
-import { useState } from "preact/hooks"
 import { VL_EN_LANGUAGE, VL_ES_LANGUAGE } from "../../constants/main"
 import { get_current_language } from "../../utils/main"
 
@@ -15,8 +14,8 @@ function BtnLanguage() {
             onClick={() => _handleChangeLanguage(VL_ES_LANGUAGE)}
             href="/"
             class={`inline-flex cursor-pointer items-center justify-center rounded-md py-1 px-3 text-sm font-medium
-              border-2 border-slate-100 text-gray-900 dark:text-white hover:text-black hover:bg-slate-100 dark:hover:text-black
-              ${current_language === VL_ES_LANGUAGE && "bg-slate-100 dark:text-black"}`
+              border-2 border-black dark:border-white text-black hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white
+              ${current_language === VL_ES_LANGUAGE ? "bg-black dark:text-black text-white dark:bg-white": "dark:text-white"}`
             }
             >
             ES
@@ -25,8 +24,8 @@ function BtnLanguage() {
             onClick={() => _handleChangeLanguage(VL_EN_LANGUAGE)}
             href="/en/"
             class={`inline-flex cursor-pointer items-center justify-center rounded-md py-1 px-3 text-sm font-medium
-              border-2 border-slate-100 text-gray-900 dark:text-white hover:text-black hover:bg-slate-100 dark:hover:text-black
-              ${current_language === VL_EN_LANGUAGE && "bg-slate-100 dark:text-black"}`
+              border-2 border-black dark:border-white text-black hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white
+              ${current_language === VL_EN_LANGUAGE ? "bg-black dark:text-black text-white dark:bg-white" : "dark:text-white"}`
             }
             >
             EN
